@@ -1,3 +1,5 @@
+package src;
+
 public class Usuario {
     private String name;
     private String password;
@@ -20,7 +22,8 @@ public class Usuario {
     
   public String validarSenha(String senha){
     int digitosFaltantes = 0;
-    Validacoes validou = new Validacoes(senha);
+    Validacoes validou = new Validacoes();
+    validou.setPassword(senha);
     
     digitosFaltantes = validou.verificarSeisCaractere() ? digitosFaltantes : ++digitosFaltantes;
     digitosFaltantes = validou.verificarDigito() ? digitosFaltantes : ++digitosFaltantes;
@@ -32,7 +35,6 @@ public class Usuario {
       setPassword(senha);
       System.out.println("successful operation");
     }
-    System.out.println(digitosFaltantes);
     return Integer.toString(digitosFaltantes);
   }
 
