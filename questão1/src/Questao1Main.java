@@ -1,6 +1,6 @@
-package capgemini.questão1;
+package src;
 
-public class questao1Main {
+public class Questao1Main {
     public static void main(String[] args){
         Piramede teste = new Piramede(6);
 

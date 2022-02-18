@@ -1,4 +1,4 @@
-package capgemini.questão1;
+package src;
 
 public class Piramede {
     private int entrada;
