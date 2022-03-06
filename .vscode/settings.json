@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "questão1/src",
+        "questão1",
         "questao2",
-        "questão1"
+        "questao3/src"
     ]
 }
